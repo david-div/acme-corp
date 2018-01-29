@@ -7,7 +7,7 @@ describe('getData', function() {
 
   var contents = "# This is the About page"
 
-  it('should bring back contents', function() {
+  it('brings back the contents from the file', function() {
     var dir = 'about-page'
     expect(getData(dir)).to.contain(contents)
   });

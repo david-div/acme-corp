@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jayfresh/static-content-challenge#readme",
   "dependencies": {
+    "ejs": "^2.5.7",
     "express": "*"
   },
   "devDependencies": {
