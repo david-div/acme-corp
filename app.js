@@ -4,9 +4,15 @@ const fs = require('fs')
 
 const app = express();
 
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
+
+
 function getData(dir){
   return fs.readFileSync(path.join(__dirname,`content/${dir}/index.md`)).toString()
 }
+
+
 
 app.get('/about-page', function(req, res){
   res.send('acme-corp')
