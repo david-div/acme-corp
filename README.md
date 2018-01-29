@@ -19,7 +19,7 @@ run:
 mocha
 ```
 
-#### My approach
+#### My approach
 Having used express before, I was aware of how it's routes worked and that values (via keys) could be passed to views. This enabled me to get the static data (using nodes fs module) and pass it to the views based on the route.
 
 #### Issues
