@@ -8,10 +8,32 @@ chai.use(chaiHttp);
 
 // server must be running
 describe('App', function() {
-  describe('/about-pages', function() {
+  describe('/about-page', function() {
     it('responds with status 200', function(done) {
       chai.request(app)
       .get('/about-page')
+      .end(function(err, res) {
+        expect(res).to.have.status(200);
+        done();
+      });
+    });
+  });
+
+  describe('/jobs', function() {
+    it('responds with status 200', function(done) {
+      chai.request(app)
+      .get('/jobs')
+      .end(function(err, res) {
+        expect(res).to.have.status(200);
+        done();
+      });
+    });
+  });
+
+  describe('/valves', function() {
+    it('responds with status 200', function(done) {
+      chai.request(app)
+      .get('/valves')
       .end(function(err, res) {
         expect(res).to.have.status(200);
         done();
