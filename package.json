@@ -1,0 +1,29 @@
+{
+  "name": "static-content-challenge",
+  "version": "1.0.0",
+  "description": "PensionBee TT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayfresh/static-content-challenge.git"
+  },
+  "author": "David Divilly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayfresh/static-content-challenge/issues"
+  },
+  "homepage": "https://github.com/jayfresh/static-content-challenge#readme",
+  "dependencies": {
+    "express": "*"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.0",
+    "chai": "^4.1.2",
+    "chai-http": "*",
+    "zombie": "*",
+    "nodemon": "*"
+  }
+}
