@@ -9,7 +9,8 @@ app.set('view engine', 'html');
 
 
 function getData(dir){
-  return fs.readFileSync(path.join(__dirname,`content/${dir}/index.md`)).toString()}
+  return fs.readFileSync(path.join(__dirname,`content/${dir}/index.md`)).toString()
+}
 
 
 app.get('/about-page', function(req, res){
