@@ -40,4 +40,17 @@ describe('App', function() {
       });
     });
   });
+
+  describe('not valid route', function() {
+    it('responds with status 404', function(done) {
+      chai.request(app)
+      .get('/not-routed-page')
+      .end(function(err, res) {
+        expect(res).to.have.status(404);
+        done();
+      });
+    });
+  });
+
+
 });
