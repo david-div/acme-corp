@@ -1,12 +1,11 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-const app = require('../app');
+const app = require('../app').app;
 
 const expect = chai.expect;
 
 chai.use(chaiHttp);
 
-// server must be running
 describe('App', function() {
   describe('/about-page', function() {
     it('responds with status 200', function(done) {
@@ -51,6 +50,4 @@ describe('App', function() {
       });
     });
   });
-
-
 });
