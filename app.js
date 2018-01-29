@@ -19,11 +19,15 @@ app.get('/about-page', function(req, res){
 });
 
 app.get('/jobs', function(req, res){
-  res.send('acme-corp')
+  res.render('template', {
+    content: getData('jobs')
+  })
 });
 
 app.get('/valves', function(req, res){
-  res.send('acme-corp')
+  res.render('template', {
+    content: getData('valves')
+  })
 });
 
 
